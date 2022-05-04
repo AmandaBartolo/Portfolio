@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: 	#242429;
+    color: white;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.15em;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px;
+    margin: 0 300px;
+    border-bottom: 1px solid rgba(18, 141, 73, 0.842);
+}
+.navbar li{
+    list-style: none;
+    padding: 0 30px;
+    font-size: 22px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar li a:hover{
+    cursor: pointer;
+    color:rgba(18, 141, 73);
+}
+.navbar li:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+}
+
+/* HOME */
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 150px 380px; 
+    text-align: center;
+}
+.home h1{
+    font-size: 70px;
+    text-shadow: 1px 2px 10px rgba(18, 141, 73);
+}
+.home h2{
+    font-size: 38px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(29, 182, 98) 0%, rgb(18, 110, 64) 90% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+.home img{
+    max-width: 500px;
+}
+
+/* SOBRE MIM */
+.sobre-mim{
+    background-color: #313138;
+    display: flex;
+    justify-content: center;
+    padding: 90px 380px;
+}
+.sobre-mim h3{
+    font-size: 40px;
+    color: rgba(18, 141, 73);
+    text-shadow: 2px 2px 3px rgb(8, 85, 43);
+}
+.skills-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+}
+.skills-icons i{
+    margin-bottom: 20px;
+}
+.sobre-mim-texto{
+    margin-left: 10%;
+    border-left: 1px solid rgba(18, 141, 73);
+    padding-left: 110px;
+}
+.sobre-mim-texto p{
+    font-size: 26px;
+    text-align: justify;
+    letter-spacing: 0.02em;
+}
+
+/* ÍCONES SKILLS HOVER */
+#html:hover{
+    color: #fe4c1e;
+}
+#css:hover{
+    color: #0071bf;
+}
+#js:hover{
+    color: #e6b101;
+}
+#git:hover{
+    color: #f05133;
+}
+#github:hover{
+    color: black;
+}
+
+/* PROJETOS */
+.projetos{
+    padding: 90px 380px;
+}
+.projetos h3{
+    font-size: 40px;
+    color: rgba(18, 141, 73);
+    text-shadow: 2px 2px 3px rgb(8, 85, 43);
+}
+.container-projetos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container-projetos p{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 5px;
+}
+.container-projetos span{
+    font-weight: 600;
+    color: rgba(18, 141, 73);
+}
+.container-projetos img{
+    max-width: 350px;
+    border-radius: 18px 18px 0 0;
+}
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+#calculadora, #to-do-list, #conversor, #calc-media, #mentalista, #relogio {
+    border: 3px solid rgba(18, 141, 73);
+    border-radius: 20px;
+    width: 350px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    box-shadow: 3px 4px 3px rgb(10, 83, 43);
+}
+
+/* BOTÕES */
+button a{
+    text-decoration: none;
+    color:rgba(18, 141, 73);
+}
+button{
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    box-shadow: 2px 2px 2px #bdbdbd;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: 0.5s;
+    background-color:#bdbdbd;
+}
+
+/* CONTATO */
+.contato{
+    background-color: #313138;
+    padding: 90px 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contato h3{
+    font-size: 40px;
+    color:rgba(18, 141, 73);
+    text-shadow: 2px 2px 3px rgb(8, 85, 43);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.contato-icons{
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
+.contato-icons a{
+    text-decoration: none;
+    color: white;
+    padding: 0 50px;
+}
+
+/* ÍCONES CONTATO HOVER */
+#linkedin:hover{
+    color: #0274b3;
+}
+#wpp:hover{
+    color: #0abb27;
+}
+#email:hover{
+    color:#f05133;
+}
+.contato-icons i:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+/* FOOTER */
+footer {
+    background-color: #313138;
+    text-align: center;
+    padding: 40px 380px;
+}
+footer p{
+    border-top: 1px solid rgba(18, 141, 73, 0.842);
+    font-size: 22px;
+    margin: 30px 0;
+    padding-top: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1300px){
+    *{
+        margin: auto;
+        padding: auto;
+        width: 100%;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 110%;
+    }
+    .home{
+        margin: 65%;
+    }
+    .home img{
+        min-width: 380px;
+    }
+    .home h1{
+        font-size: 60px;
+    }
+    .home h2{
+        font-size: 30px;
+    }
+    .skills{
+        margin-right: 40px;
+        margin-top: 0;
+    }
+    .skills-icons{
+        text-align: center;
+    }
+    .sobre-mim-texto{
+        padding-left: 80px;
+    }
+    .sobre-mim-texto p{
+        font-size: 25px;
+        text-align: justify;
+        letter-spacing: 0em;
+        width: 410px;
+    }
+    button{
+        width: 100px;
+    }
+}
